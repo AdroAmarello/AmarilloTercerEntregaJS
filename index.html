@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Tercera PreEntrega</title>
+	</head>
+	<body>
+		<h1>Calculadora de pagos a Profes</h1>
+		<div class="container">
+			<div class="info">
+				<div class="cargaDatos">
+					<label class="datos"for="num-clases"
+						>Clases dictadas en el mes</label
+					>
+					<input class="datos" type="number"  name="num-clases" id="clasesDictadas" min="0" step="1" required/>
+										
+					<label class="datos" for="nombre">Nombre de Alumno:</label>
+					<input class="datos" type="text" name="nombre" id="nombreAlumno" required/>
+					<label class="datos"for="apellido">Apellido de Alumno:</label>
+					<input class="datos" type="text" name="apellido" id="apellidoAlumno" required/>
+					<label class="datos"for="tipoDePase">Tipo de Pase:</label>
+					<input class="pases" type="radio" name="tipoDePase" id="paseXuna" value="800"/> Clase Suelta
+
+					<input class="pases" type="radio" name="tipoDePase" id="paseXcuatro" value="3000"/> Pack por 4
+					
+					<input class="pases" type="radio" name="tipoDePase" id="paseXocho" value="5600"/> Pack por 8
+					<button class="btn" id="cargarAlumno">Cargar Alumno</button>
+				</div>
+				<div class="infoAlumnos">
+					<div class="tabla" id="tablaAlumnos"></div>
+
+				</div>
+			</div>
+			<div class="pagos">
+				<div id="pagoProfesor">
+				</div>
+				<button class="btn"id="calcularPago" class="datos">Calcular Pago</button>
+			</div>
+			
+			<div class="listado">
+				<button class="btn"id="listarAlfabetica" >Listar Alumnos Alfabéticamente</button>
+				
+				<ul id="listaAlumnosAlfabetica"></ul>
+			</div>
+
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
